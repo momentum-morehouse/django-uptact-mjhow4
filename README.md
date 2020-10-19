@@ -28,8 +28,8 @@ $ cp uptact/.env.sample uptact/.env
 
 For the first assignment, spend time familiarizing yourself with Django. Look at the `uptact` directory (the _project directory_) and the `contacts` directory (an _app directory_). Answer the following questions for yourself:
 
-* If I wanted to add a new URL to this project, what two files would I edit?
-* If I wanted to add a birthday to each contact, what file would I edit?
+* If I wanted to add a new URL to this project, what two files would I edit? The URL and the View.
+* If I wanted to add a birthday to each contact, what file would I edit? The forms.py and models.py files.
 
 Then do the following steps:
 
@@ -45,8 +45,8 @@ With this assignment, we are going to explore relationships between models, and 
 
 Answer the following questions:
 
-* If I wanted to add a new model, where would I do that?
-* If I wanted to connect the new model to the `Contact` model, how would I do that?
+* If I wanted to add a new model, where would I do that? In the models.py file.
+* If I wanted to connect the new model to the `Contact` model, how would I do that? Use a Foreignkey. 
 
 Then do the following steps:
 

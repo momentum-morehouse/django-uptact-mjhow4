@@ -46,3 +46,12 @@ def delete_contact(request, pk):
 
     return render(request, "contacts/delete_contact.html",
                   {"contact": contact})
+
+def note_contact(request, pk):
+    contact = get_object_or_404(Contact, pk=pk)
+    if request.method == 'POST':
+        contact.note()
+        return redirect(to='list_contacts')
+
+    return render(request, "contacts/note_contact.html",
+                  {"contact": contact})
